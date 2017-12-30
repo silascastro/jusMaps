@@ -7,15 +7,42 @@
 
 
 <ion-content padding>
-  <h3>Welcome to your first Ionic app!</h3>
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
-  </p>
+  <ion-slides pager>
 
+    <ion-slide class="slide_img">
+      <img src="../assets/imgs/slide1.png" alt="slide1">
+      <h1>Ionic App</h1>
+      <br>
+      <div>
+        <p>
+          Este App foi criado no curso de ionic em uma parceria da <strong>Universidade Estadual do Amazonas</strong> e o setor de IT/TI do <strong>Tribunal
+          de Justiça do Amazonas</strong>
+        </p>
+      </div>
+
+    </ion-slide>
+
+    <ion-slide class="slide_img">
+      <img src="../assets/imgs/slide2.png" alt="slide2">
+
+      <h2>Tudo na palma da sua mão</h2>
+      <br>
+      <div>
+        <p>
+          Tudo pode ser visto no seu smartphone Android ou IOS. Basta apenas conexão com a internet.
+        </p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Slide 3</h2>
+    </ion-slide>
+
+
+    <ion-slide>
+        <h2>Slide 4</h2>
+        <a (click)="goToHomePage()">Continuar</a> <!--vai pra pagina home-->
+      </ion-slide>
+
+  </ion-slides>
 </ion-content>
