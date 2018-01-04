@@ -59,11 +59,7 @@ export class HomePage {
 
 
   addInfoWindow(marker, content) {
-
-    let infoWindow = new google.maps.InfoWindow({
-      content: content
-    });
-
+    /*evento de clique no marcador */
     google.maps.event.addListener(marker, 'click', () => {
       //infoWindow.open(this.map, marker);
       this.presentPrompt();
